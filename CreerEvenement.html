@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="fichier.css">
+    <title>Eventoday - Creation evenement</title>
+  </head>
+  <body>
+    <h1> Créez Votre événement </h1>
+    <form action="accueil.html" method="post">
+      <fieldset>
+        <legend><b>Informations générales :</b></legend>
+        <p>
+        <label >Titre de l'événement</label><br>
+        <textarea name="titre" placeholder="Insérez le titre" rows="2" cols="40" required>
+        </textarea><br>
+        <br>
+        <label >Organisateur</label><br>
+        <textarea  name="organisateur" placeholder="Organisateur" rows="2" cols="40" required>
+        </textarea><br>
+        <br>
+        <label for="Cathegorie">Cathégorie</label><br>
+        <select name="cathegorie" id="Cathegorie">
+          <option value="">---Choisir une option---</option>
+          <option value="sport">Sport et Fitness</option>
+          <option value="famille">Famille et éducation</option>
+          <option value="science">Science et technologie</option>
+          <option value="celebration">Fêtes et célébrations</option>
+          <option value="musique">Musique</option>
+          <option value="culture">Culture et communauté</option>
+          <option value="politique">Gouvernement et politique</option>
+        </select>
+      </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend><b> Endroit : </b></legend>
+        <p>
+          <b> Événement en ligne ? </b><br>
+          <input type="radio" name="enligne" value="presentiel" id="presentiel" checked> <label for="presentiel">Oui</label><br>
+          <input type="radio" name="enligne" value="distanciel" id="distanciel"> <label for="distanciel">Non</label><br>
+        </p>
+        <p>
+        <label><b> Lieu : </b> </label><br>
+        <input type="text" name="lieu" placeholder="Recherchez un lieu/une adresse" required><br>
+       </p>
+      </fieldset>
+      <fieldset>
+        <legend><b> Date et l'heure : </b></legend>
+        <p>
+          <label> Début de l'événement : </label><br>
+          <input type="date" /><br><br>
+           <label> Fin de l'événement : </label><br>
+          <input type="date" /><br><br>
+          <label> Heure de début : </label><br>
+          <input type="time" /><br><br>
+           <label> Heure de fin : </label><br>
+          <input type="time" /><br><br>
+        </p>
+      </fieldset>
+
+    <input type="submit" value="Annuler">    <input type="submit" value="Sauvegarder et continuer">
+    </form>
+
+  </body>
+</html>
